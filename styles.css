@@ -1,0 +1,465 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --main-bg-color: #2a2a40;
+    --black: #000;
+    --dark-navy: #0a0a23;
+    --dark-grey: #d0d0d5;
+    --medium-grey: #dfdfe2;
+    --light-grey: #f5f6f7;
+    --peach: #f28373;
+    --salmon-color: #f0aea9;
+    --light-blue: #8bd9f6;
+    --light-orange: #f8b172;
+    --light-green: #93cb5b;
+    --golden-yellow: #f1ba33;
+    --gold: #f9aa23;
+    --green: #6bca6b;
+  }
+  
+  body {
+    background-color: var(--main-bg-color);
+  }
+  
+  #card-container {
+    height: 900px;
+    width: 500px;
+    border: 3px solid yellow;
+    border-radius: 10px;
+    margin: auto;
+    
+  }
+
+  nav {
+    background-color: var(--dark-navy);
+    padding: 10px 0;
+  }
+  
+  .poke-ball-icon {
+    display: block;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    max-height: 100px;
+    max-width: 100px;
+  }
+  
+  .title {
+    margin: 15px 0;
+    text-align: center;
+    color: var(--light-grey);
+  }
+  
+.user-input {
+  margin: 10px 15%;
+  position: relative;
+  display: inline-block;
+}
+
+.user-input input, button{
+  border-radius: 20px;
+}
+.user-input input {
+  height: 30px;
+  background: var(--light-grey);
+  text-align: center;
+}
+.user-input button {
+  height: 30px;
+  width: 70px;
+  background: var(--peach)
+}
+
+  #poke-card {
+    padding: 10px;
+    height: 300px;
+    width: 95%;
+    margin: auto;
+    position: relative;
+    background: var(--light-grey);
+    opacity: 85%;
+    border: 3px double var(--light-grey);
+    border-radius: 10px
+  }
+
+.critter-name {
+  font-size: 1.7rem;
+    color: var(--light-blue);
+    text-decoration: none;
+    display: inline-block;
+    font-family: sans-serif;
+    margin: auto;
+}
+
+.critter-id {
+  font-size: 1.7rem;
+    color: var(--light-blue);
+    text-decoration: none;
+    display: inline-block;
+    margin: auto;
+}
+
+.critter-size {
+  font-size: 1.0rem;
+    color: var(--green);
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+#icon {
+  display: block;
+  position: relative;
+  bottom: 10%;
+  left: 50%;
+  margin: auto;
+  
+}
+
+.critter-icon {
+  height: 150px;
+  width: 150px;
+  max-height: 175px;
+  max-width: 175px;
+  /*border: 3px solid gradient(#004f2f)*/
+}
+
+.critter-type {
+  display: block;
+  position: absolute;
+  padding: 0px;
+  margin: 0;
+  bottom: 30px;
+  height: auto;
+  width: auto;
+  font-size: 1.7rem;
+}
+
+.critter-ice {
+  font-size: 1.7rem;
+  background: linear-gradient(to bottom left, #66ffff 55%, #0099ff 100%);
+  display: inline-block;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    position: relative;
+    margin-right: 10px;
+    font-family: sans-serif; 
+}
+.critter-water {
+  font-size: 1.7rem;
+background: linear-gradient(#00ffff, #ffffff,#00ffff);
+  /*--mask: radial-gradient(93.4px at 50% calc(100% + 74.25px),#0000 calc(99% - 2px),#000 calc(101% - 2px) 99%,#0000 101%) calc(50% - 110px) calc(50% - 28.5px + .5px)/220px 57px ,
+    radial-gradient(93.4px at 50% -74.25px,#0000 calc(99% - 2px),#000 calc(101% - 2px) 99%,#0000 101%) 50% calc(50% + 28.5px)/220px 57px ;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);*/
+  display: inline-block;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    position: relative;
+    margin-right: 10px;
+    font-family: sans-serif; 
+}
+.critter-electric {
+  font-size: 1.7rem;
+  background: linear-gradient(#ffff00,#ffffcc, #ffff00);
+  display: inline-block;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    position: relative;
+    margin-right: 10px;
+    font-family: sans-serif; 
+}
+.critter-ghost {
+  font-size: 1.7rem;
+  background: #f8f0f0;
+  opacity: 40%;
+  display: inline-block;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    position: relative;
+    margin-right: 10px;
+    font-family: sans-serif; 
+}
+.critter-fire {
+  font-size: 1.7rem;
+  background: linear-gradient(to bottom, #669999 0%, #ff6600 84%);
+  display: inline-block;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    position: relative;
+    margin-right: 10px;
+    font-family: sans-serif; 
+}
+.critter-normal {
+  font-size: 1.7rem;
+  display: inline-block;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    position: relative;
+    margin-right: 10px;
+    font-family: sans-serif; 
+}
+
+.critter-fighting {
+  font-size: 1.7rem;
+  background: #999999;
+  display: inline-block;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    position: relative;
+    margin-right: 10px;
+    font-family: sans-serif; 
+}
+.critter-flying {
+  font-size: 1.7rem;
+  background: linear-gradient(to bottom, #ffffff 0%, #33ccff 100%);
+  display: inline-block;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    position: relative;
+    margin-right: 10px;
+    font-family: sans-serif; 
+}
+.critter-poison {
+  font-size: 1.7rem;
+  background: radial-gradient(#99cc00 40%, #ccff66 60%);
+  display: inline-block;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    position: relative;
+    margin-right: 10px;
+    font-family: sans-serif; 
+}
+.critter-ground {
+  font-size: 1.7rem;
+  background: #996633;
+  display: inline-block;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    position: relative;
+    margin-right: 10px;
+    font-family: sans-serif; 
+}
+.critter-rock {
+  font-size: 1.7rem;
+  background: #999966;
+  display: inline-block;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    position: relative;
+    margin-right: 10px;
+    font-family: sans-serif; 
+}
+.critter-bug {
+  font-size: 1.7rem;
+  background: #ff1a1a;
+  display: inline-block;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    position: relative;
+    margin-right: 10px;
+    font-family: sans-serif; 
+}
+.critter-steel {
+  font-size: 1.7rem;
+  background: #7575a3;
+  display: inline-block;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    position: relative;
+    margin-right: 10px;
+    font-family: sans-serif; 
+}
+.critter-grass {
+  font-size: 1.7rem;
+  background: linear-gradient(to right, #00cc00, #66ff66,#00cc00, #66ff66, #00cc00, #66ff66, #00cc00, #66ff66, #00cc00, #66ff66, #00cc00, #66ff66, #00cc00, #66ff66, #00cc00, #66ff66, #00cc00);
+  display: inline-block;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    position: relative;
+    margin-right: 10px;
+    font-family: sans-serif; 
+}
+.critter-psychic {
+  font-size: 1.7rem;
+  background: linear-gradient(to top right, #33ccff 0%, #ff99cc 100%);
+  display: inline-block;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    position: relative;
+    margin-right: 10px;
+    font-family: sans-serif; 
+}
+.critter-dragon {
+  font-size: 1.7rem;
+  background: linear-gradient(to bottom, #ff9933 0%, #336600 100%);
+  display: inline-block;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    position: relative;
+    margin-right: 10px;
+    font-family: sans-serif; 
+}
+.critter-dark {
+  font-size: 1.7rem;
+  background: linear-gradient(to bottom, #000000 50%, #666699 100%);
+  color: white;
+  display: inline-block;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    position: relative;
+    margin-right: 10px;
+    font-family: sans-serif; 
+}
+.critter-fairy {
+  font-size: 1.7rem;
+  background: linear-gradient(to bottom, #660066 0%, #99ffcc 100%);
+  display: inline-block;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    position: relative;
+    margin-right: 10px;
+    font-family: sans-serif; 
+}
+.critter-stellar {
+  font-size: 1.7rem;
+  background: linear-gradient(to top right, #00ffcc 0%, #9900cc 100%);
+  display: inline-block;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    position: relative;
+    margin-right: 10px;
+    font-family: sans-serif; 
+}
+.critter-unknown {
+  font-size: 1.7rem;
+  background-image: url("https://archives.bulbagarden.net/media/upload/d/df/UnknownIC_Stad2.png")
+  display: inline-block;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    position: relative;
+    margin-right: 10px;
+    font-family: sans-serif; 
+}
+
+
+  .table-wrapper {
+    padding: 0 25px;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    margin-right: 10px;
+  }
+  
+thead {
+  position: relative;
+  display: block;
+}
+
+  table {
+    width: 100%;
+    color: var(--dark-grey);
+    margin: auto;
+    table-layout: fixed;
+
+    position: absolute;
+  }
+  
+  #th-base {
+    text-align: start;
+    width: 10%;
+    position: relative;
+    padding-right: 100px;
+    padding-bottom: 5px;
+    font-size: 1.3rem;
+  }
+  #th-stats {
+    text-align: start;
+    width: 10%;
+    position: relative;
+    
+    padding-bottom: 5px;
+    font-size: 1.3rem;
+  }
+  
+  #stats-container th {
+    padding: 8px;
+    border: 2px solid
+  }
+  
+  td:not(:first-child) {
+    text-align: center;
+  }
+  
+  td {
+    border-bottom: 1px solid var(--dark-grey);
+    padding: 20px 0;
+  }
+  
+  #stats-container {
+    margin: auto;
+    display: block;
+    position: absolute;
+    padding: 10px 50px 10px 0px
+  }
+
+  .post-title {
+    font-size: 1.2rem;
+    color: var(--medium-grey);
+    text-decoration: none;
+  }
+  
+  .category {
+    padding: 3px;
+    color: var(--black);
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    margin: 10px 0 10px;
+  }
+  
+  
+
+  
+
+  
+  @media (max-width: 750px) {
+    .table-wrapper {
+      padding: 0 15px;
+    }
+  
+    table {
+      width: 300px;
+    }
+  
+    th {
+      font-size: 1.2rem;
+    }
+  
+    .post-title {
+      font-size: 1.1rem;
+    }
+  }

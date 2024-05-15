@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fCC Forum Leaderboard</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="card-container">
+    <header>
+      <nav>
+        <img
+          class="poke-ball-icon"
+          src="https://cdn-icons-png.flaticon.com/512/528/528101.png"
+          alt="poke ball"
+        />
+      </nav>
+      
+      <h1 class="title">Pokémon Search App</h1>
+    </header>
+    <main>
+      <div class="user-input">
+        <input id="search-input" required></input>
+        <button id="search-button" type="button">Search</button>
+        </div>
+      <div id="poke-card">
+        <p id="pokemon-name" class="critter-name"> </p><p id="pokemon-id" class="critter-id"> </p>
+      <p id="weight" class="critter-size"></p><p id="height" class="critter-size"></p><div id="icon"></div><div id="types" class="critter-type"></div>
+
+        
+      </div>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th id="th-base">Base</th>
+              <th id="th-stats">Stats</th>
+            </tr>
+          </thead>
+          <tbody id="stats-container">
+            <tr>
+              <th>Hp:</th><th id="hp"></th>
+            </tr>
+            <tr>
+              <th>Attack: </th><th id="attack"></th>
+            </tr>
+            <tr>
+              <th>Defense: </th><th id="defense"></th>
+            </tr>
+            <tr>
+              <th>Sp. Attack: <th id="special-attack"></th>
+              </tr>
+              <tr>
+              <th>Sp. Defense: </th><th id="special-defense"></th>
+            </tr>
+            <tr>
+              <th>Speed: </><th id="speed"></th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+    </main>
+    <script src="./script.js"></script>
+    </div>
+  </body>
+</html>
