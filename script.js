@@ -140,7 +140,7 @@ const searchCreatureData = (data) => {
   })
   document.getElementById("types").innerHTML = typeText;
 
-/*console.log(document.getElementById("pokemon-name").textContent)*/
+
 
   creatureStatName.forEach((i) => {
 
@@ -158,17 +158,9 @@ const searchCreatureData = (data) => {
       case "speed": document.getElementById("speed").innerHTML = `${creatureBaseStats[5]}`
       break;
     }
-    /*if (i === "hp") {
-      document.getElementById("hp").innerHTML += `<span>${data.stats[0].base_stat}</span>`
-    }
-    if (i === "hp") {
-      document.getElementById("hp").innerHTML += `<span>${data.stats[0].base_stat}</span>`
-    }*/
+
   })
 
-  /*pokeCard.innerHTML = `<p id="pokemon-name" class="critter-name">${data.name.toUpperCase()}</p>
-      <p id="pokemon-id" class="critter-id">#${data.id}</p> <p id="weight height" class="critter-size">Weight: ${data.weight} Height: ${data.height}</p> <div id="icon"><img id="sprite" class="critter-icon" src="${data.sprites.front_default}" alt="${data.name}" /></div>
-      <div id="types" class="critter-type">${typeText}</div>`*/
       
 }
 
@@ -187,6 +179,6 @@ searchBtn.addEventListener("click", () => {
 const test94 = () => {
   document.getElementById("search-input").value = 94;
   document.getElementById("search-button").click()
-  //console.log()
+
 }
 //test94()

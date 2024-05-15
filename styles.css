@@ -152,10 +152,6 @@
 .critter-water {
   font-size: 1.7rem;
 background: linear-gradient(#00ffff, #ffffff,#00ffff);
-  /*--mask: radial-gradient(93.4px at 50% calc(100% + 74.25px),#0000 calc(99% - 2px),#000 calc(101% - 2px) 99%,#0000 101%) calc(50% - 110px) calc(50% - 28.5px + .5px)/220px 57px ,
-    radial-gradient(93.4px at 50% -74.25px,#0000 calc(99% - 2px),#000 calc(101% - 2px) 99%,#0000 101%) 50% calc(50% + 28.5px)/220px 57px ;
-  -webkit-mask: var(--mask);
-          mask: var(--mask);*/
   display: inline-block;
     border: 2px solid black;
     border-radius: 8px;
