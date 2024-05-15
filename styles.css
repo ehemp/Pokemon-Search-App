@@ -355,7 +355,7 @@ background: linear-gradient(#00ffff, #ffffff,#00ffff);
 }
 .critter-unknown {
   font-size: 1.7rem;
-  background-image: url("https://archives.bulbagarden.net/media/upload/d/df/UnknownIC_Stad2.png")
+  background-image: url("https://archives.bulbagarden.net/media/upload/d/df/UnknownIC_Stad2.png");
   display: inline-block;
     border: 2px solid black;
     border-radius: 8px;
